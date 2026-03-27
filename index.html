@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glosario PLN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Glosario PLN</h1>
+  <p>Términos y definiciones relacionados con el Procesamiento del Lenguaje Natural</p>
+</header>
+
+<div class="search-bar">
+  <input type="search" id="search" placeholder="Buscar término..." autocomplete="off" />
+</div>
+
+<main>
+  <p class="count" id="count"></p>
+  <div id="results"></div>
+</main>
+
+<!-- Detail modal -->
+<dialog id="modal">
+  <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+  <h2 id="modal-term">Término</h2>
+  <p  id="modal-def"></p>
+  <img id="modal-img" src="" alt="" hidden />
+  <div class="tags" id="modal-tags"></div>
+  <span class="modal-link" id="modal-link"></span>
+</dialog>
+
+<script>
+  let terms = [];
+
+  async function loadTerms() {
+    const res = await fetch('terms.json');
+    terms = await res.json();
+    render(terms);
+    // Open term from URL hash on load
+    const slug = location.hash.slice(1);
+    if (slug) {
+      const t = terms.find(t => t.slug === slug);
+      if (t) openModal(t);
+    }
+  }
+
+  function esc(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function renderTags(tags) {
+    if (!tags?.length) return '';
+    const spans = tags.map(t => `<span class="tag">${esc(t)}</span>`).join('');
+    return `<div class="tags">${spans}</div>`;
+  }
+
+  function render(list) {
+    const container = document.getElementById('results');
+    const count = document.getElementById('count');
+    count.textContent = `${list.length} término${list.length !== 1 ? 's' : ''}`;
+
+    if (list.length === 0) {
+      container.innerHTML = '<p class="empty">No se encontraron términos.</p>';
+      return;
+    }
+
+    container.innerHTML = list.map(item => `
+      <a class="card" href="#${esc(item.slug)}" data-slug="${esc(item.slug)}">
+        <h2>${esc(item.term)}</h2>
+        <p class="preview">${esc(item.definition)}</p>
+        ${renderTags(item.tags)}
+      </a>
+    `).join('');
+  }
+
+  function openModal(term) {
+    document.getElementById('modal-term').textContent = term.term;
+    document.getElementById('modal-def').textContent  = term.definition;
+
+    const img = document.getElementById('modal-img');
+    if (term.image) {
+      img.src    = `img/${term.image}`;
+      img.alt    = term.term;
+      img.hidden = false;
+    } else {
+      img.hidden = true;
+    }
+
+    const tagsEl = document.getElementById('modal-tags');
+    tagsEl.innerHTML = term.tags?.length
+      ? term.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')
+      : '';
+
+    document.getElementById('modal-link').textContent = location.href.split('#')[0] + '#' + term.slug;
+
+    const modal = document.getElementById('modal');
+    modal.showModal();
+    history.replaceState(null, '', '#' + term.slug);
+  }
+
+  function closeModal() {
+    document.getElementById('modal').close();
+    history.replaceState(null, '', location.pathname + location.search);
+  }
+
+  // Open modal on card click
+  document.getElementById('results').addEventListener('click', e => {
+    const card = e.target.closest('.card');
+    if (!card) return;
+    e.preventDefault();
+    const term = terms.find(t => t.slug === card.dataset.slug);
+    if (term) openModal(term);
+  });
+
+  // Close modal
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  // Click on ::backdrop closes the dialog
+  document.getElementById('modal').addEventListener('click', e => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    if (e.clientX < rect.left || e.clientX > rect.right ||
+        e.clientY < rect.top  || e.clientY > rect.bottom) closeModal();
+  });
+  // Escape is handled natively by <dialog>, but we still need to clean the URL
+  document.getElementById('modal').addEventListener('close', () => {
+    history.replaceState(null, '', location.pathname + location.search);
+  });
+
+  // Search
+  document.getElementById('search').addEventListener('input', e => {
+    const q = e.target.value.toLowerCase().trim();
+    render(q ? terms.filter(t =>
+      t.term.toLowerCase().includes(q) ||
+      t.definition.toLowerCase().includes(q) ||
+      (t.tags || []).some(tag => tag.toLowerCase().includes(q))
+    ) : terms);
+  });
+
+  loadTerms();
+</script>
+
+</body>
+</html>
