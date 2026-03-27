@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="term-page">
+
+  <nav class="breadcrumb">
+    <a href="{{ '/' | relative_url }}">Glosario</a> / {{ page.title }}
+  </nav>
+
+  <h1 class="term-title">{{ page.title }}</h1>
+
+  {% if page.summary %}
+    <p class="term-summary">{{ page.summary }}</p>
+  {% endif %}
+
+  {% if page.tags and page.tags.size > 0 %}
+    <div class="tags">
+      {% for tag in page.tags %}
+        <a href="{{ '/' | relative_url }}?tag={{ tag | uri_escape }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.image %}
+    <figure class="term-figure">
+      <img
+        src="{{ '/assets/img/' | append: page.image | relative_url }}"
+        alt="{{ page.title | escape }}"
+        loading="lazy"
+      />
+    </figure>
+  {% endif %}
+
+  <div class="term-body">
+    {{ content }}
+  </div>
+
+</article>

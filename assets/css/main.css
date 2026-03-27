@@ -1,0 +1,179 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+header {
+  background: #1e3a5f;
+  color: white;
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+}
+header .site-title {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+header p {
+  margin-top: 0.4rem;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+footer a { color: #1e3a5f; text-decoration: none; }
+
+/* ── Search bar ── */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 1rem 0.75rem;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.search-bar input {
+  width: 100%;
+  max-width: 560px;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search-bar input:focus { border-color: #1e3a5f; }
+
+/* ── Tag filter bar ── */
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.tag-btn {
+  background: #e8eef5;
+  color: #1e3a5f;
+  border: 1px solid transparent;
+  border-radius: 99px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tag-btn:hover  { background: #d0dce9; }
+.tag-btn.active { background: #1e3a5f; color: white; }
+
+/* ── Term list (index) ── */
+.list-container {
+  max-width: 760px;
+  margin: 2rem auto;
+  padding: 0 1rem 4rem;
+}
+.count { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-left: 4px solid #1e3a5f;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.card:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.13);
+  transform: translateY(-1px);
+}
+.card h2    { font-size: 1.05rem; color: #1e3a5f; }
+.card .preview {
+  font-size: 0.88rem;
+  color: #555;
+  margin-top: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Tags (shared) ── */
+.tags { margin-top: 0.6rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.tag {
+  background: #e8eef5;
+  color: #1e3a5f;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 99px;
+  text-decoration: none;
+}
+a.tag:hover { background: #d0dce9; }
+
+.empty { text-align: center; color: #888; margin-top: 3rem; }
+
+/* ── Term page ── */
+.term-page {
+  max-width: 760px;
+  margin: 2rem auto;
+  padding: 0 1rem 4rem;
+}
+.breadcrumb {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+.breadcrumb a { color: #1e3a5f; text-decoration: none; }
+
+.term-title   { font-size: 1.7rem; color: #1e3a5f; margin-bottom: 0.4rem; }
+.term-summary { font-size: 1rem; color: #555; margin-bottom: 1rem; border-left: 3px solid #1e3a5f; padding-left: 0.75rem; }
+
+.term-figure { margin: 1.5rem 0; }
+.term-figure img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.term-body {
+  margin-top: 1.75rem;
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+.term-body h2 { font-size: 1.15rem; color: #1e3a5f; margin: 1.75rem 0 0.5rem; }
+.term-body h3 { font-size: 1rem; color: #333; margin: 1.25rem 0 0.4rem; }
+.term-body p  { margin-bottom: 0.9rem; }
+.term-body ul, .term-body ol { margin: 0.5rem 0 0.9rem 1.5rem; }
+.term-body li { margin-bottom: 0.3rem; }
+.term-body code {
+  background: #f0f0f0;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.term-body pre {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+.term-body pre code { background: none; padding: 0; }

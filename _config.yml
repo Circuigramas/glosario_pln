@@ -1,0 +1,27 @@
+title: Glosario PLN
+description: Términos y definiciones de Procesamiento del Lenguaje Natural
+baseurl: /glosario_pln
+url: https://circuigramas.github.io
+
+collections:
+  terms:
+    output: true
+    permalink: /terms/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: terms
+    values:
+      layout: term
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
