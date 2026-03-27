@@ -17,7 +17,9 @@
 <body>
 
 <header>
-  <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+  <a href="{{ '/' | relative_url }}" class="site-title">
+    <img src="{{ '/assets/img/Logo_circuigramas.png' | relative_url }}" alt="{{ site.title }}" class="site-logo" />
+  </a>
   <p>{{ site.description }}</p>
 </header>
 
