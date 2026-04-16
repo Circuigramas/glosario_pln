@@ -27,11 +27,15 @@ summary: "Definición breve de una o dos oraciones."
 author: Tu Nombre
 date: AAAA-MM-DD
 tags:
-  - Etiqueta1
-  - Etiqueta2
+  - TagPrincipal
+subtags:
+  - Subtema1
+  - Subtema2
 ---
 ```
 Nótese que en el `title` no hace falta usar `_`.
+
+El campo `subtags` es opcional. Si se incluye, aparecerá un desplegable en la página principal cuando el usuario seleccione el tag principal correspondiente, permitiendo filtrar por subtema.
 
 3. Debajo del encabezado de los metadatos, escribe el contenido de la entrada en markdown.
 
@@ -50,6 +54,8 @@ author: Jorge Zamora Rey
 date: 2026-04-16
 tags:
   - Fundamentos
+subtags:
+  - Tokenización
 ---
 
 Un **token** puede ser una palabra, una sílaba o incluso un carácter, dependiendo del tokenizador utilizado.

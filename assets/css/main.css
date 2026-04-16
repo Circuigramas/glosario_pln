@@ -88,6 +88,27 @@ footer a { color: #0a1325; text-decoration: none; }
 .tag-btn:hover  { background: #c5ddd6; }
 .tag-btn.active { background: #0a1325; color: #fefefe; }
 
+/* ── Subtag dropdown ── */
+.subtag-filters {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem 0.6rem;
+  background: #fefefe;
+  border-bottom: 1px solid #c5ddd6;
+}
+.subtag-filters select {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #b8d4c8;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background: #fefefe;
+  color: #0a1325;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.subtag-filters select:focus { border-color: #0a1325; }
+
 /* ── Term list (index) ── */
 .list-container {
   max-width: 760px;

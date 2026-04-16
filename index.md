@@ -16,6 +16,12 @@ permalink: /
   {% endfor %}
 </div>
 
+<div id="subtag-filters" class="subtag-filters" style="display:none">
+  <select id="subtag-select">
+    <option value="">Todos los subtemas</option>
+  </select>
+</div>
+
 <div class="list-container">
   <p class="count" id="count"></p>
   <div id="results"></div>
@@ -30,7 +36,8 @@ permalink: /
       "title":   {{ term.title   | jsonify }},
       "summary": {{ term.summary | default: "" | jsonify }},
       "tags":    {{ term.tags    | default: [] | jsonify }},
-      "url":     {{ term.url     | relative_url | jsonify }}
+      "url":     {{ term.url     | relative_url | jsonify }},
+      "subtags": {{ term.subtags | default: [] | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
