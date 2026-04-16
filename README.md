@@ -1,8 +1,14 @@
-# Glosario de PLN de Circuigramas
+# Glosario de Circuigramas
 
-Glosario de términos relacionados con el Procesamiento del Lenguaje Natural, publicado en GitHub Pages.
+Glosario de términos relacionados con los artículos de Circuigramas, publicado en GitHub Pages.
 
 Visita el sitio: https://circuigramas.github.io/glosario_pln/
+
+---
+## Tags/temas que trata el glosario
+- Fundamentos (definiciones de áreas o de términos específicos de PLN o LC)
+- Matemáticas (definiciones de conceptos matemáticos)
+- Informática (definiciones de conceptos de la informática: hardware, SO, etc.)
 
 ---
 
