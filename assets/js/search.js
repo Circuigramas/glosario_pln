@@ -32,7 +32,7 @@
         (term.summary || '').toLowerCase().includes(q) ||
         (term.tags || []).some(t => t.toLowerCase().includes(q));
       return matchesTag && matchesSearch;
-    });
+    }).sort((a, b) => a.title.localeCompare(b.title, 'es'));
 
     countEl.textContent =
       filtered.length + ' término' + (filtered.length !== 1 ? 's' : '');

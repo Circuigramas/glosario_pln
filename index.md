@@ -23,7 +23,8 @@ permalink: /
 
 <script id="terms-data" type="application/json">
 [
-  {% for term in site.terms %}
+  {% assign sorted_terms = site.terms | sort: "title" %}
+  {% for term in sorted_terms %}
     {
       "slug":    {{ term.slug    | jsonify }},
       "title":   {{ term.title   | jsonify }},
