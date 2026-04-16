@@ -154,7 +154,7 @@ footer a { color: #0a1325; text-decoration: none; }
   text-decoration: none;
 }
 a.tag:hover { background: #c5ddd6; }
-.tag--sub { background: #d6e4f7; color: #1a3a5c; }
+.tag.tag--sub { background: #d6e4f7; color: #1a3a5c; }
 
 .empty { text-align: center; color: #4a6358; margin-top: 3rem; }
 

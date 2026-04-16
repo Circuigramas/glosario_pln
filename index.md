@@ -37,7 +37,7 @@ permalink: /
       "summary": {{ term.summary | default: "" | jsonify }},
       "tags":    {{ term.tags    | default: [] | jsonify }},
       "url":     {{ term.url     | relative_url | jsonify }},
-      "subtags": {{ term.subtags | default: [] | jsonify }}
+      "subtags": {% if term.subtags %}{{ term.subtags | jsonify }}{% else %}[]{% endif %}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
