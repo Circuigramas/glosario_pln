@@ -2,7 +2,7 @@
 title: "Procesamiento del Lenguaje Natural (PLN)"
 summary: "Campo de la IA que estudia cómo las computadoras pueden entender, interpretar y generar lenguaje humano."
 author: Jorge Zamora Rey
-date: XX-XX-XXXX
+date: 16-04-2026
 tags:
   - Fundamentos
 ---
