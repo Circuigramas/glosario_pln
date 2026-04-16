@@ -151,6 +151,7 @@ a.tag:hover { background: #c5ddd6; }
 
 .term-title   { font-size: 1.7rem; color: #0a1325; margin-bottom: 0.4rem; }
 .term-summary { font-size: 1rem; color: #4a6358; margin-bottom: 1rem; border-left: 3px solid #e2f1eb; padding-left: 0.75rem; }
+.term-meta    { font-size: 0.85rem; color: #7a8e85; margin-bottom: 1rem; }
 
 .term-figure { margin: 1.5rem 0; }
 .term-figure img {

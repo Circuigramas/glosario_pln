@@ -13,6 +13,14 @@ layout: default
     <p class="term-summary">{{ page.summary }}</p>
   {% endif %}
 
+  {% if page.author or page.date %}
+    <p class="term-meta">
+      {% if page.author %}<span class="term-author">{{ page.author }}</span>{% endif %}
+      {% if page.author and page.date %} · {% endif %}
+      {% if page.date %}<span class="term-date">{{ page.date }}</span>{% endif %}
+    </p>
+  {% endif %}
+
   {% if page.tags and page.tags.size > 0 %}
     <div class="tags">
       {% for tag in page.tags %}
