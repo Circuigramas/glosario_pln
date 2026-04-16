@@ -5,6 +5,8 @@ author: Jorge Zamora Rey
 date: 2026-04-02
 tags:
   - Informática
+subtags:
+  - Sistemas Operativos
 ---
 
 Es una aplicación que lee los comandos del usuario e invoca servicios que proporciona el sistema operativo, los que son necesarios para ejecutar esos comandos del usuario.
