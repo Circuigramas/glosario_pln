@@ -26,7 +26,7 @@ Visita el sitio: https://circuigramas.github.io/glosario_pln/
 title: "Nombre del término"
 summary: "Definición breve de una o dos oraciones."
 author: Tu Nombre
-date: DD-MM-AAAA
+date: AAAA-MM-DD
 tags:
   - Etiqueta1
   - Etiqueta2
@@ -44,7 +44,7 @@ tags:
 title: "Token"
 summary: "Unidad mínima de texto que un modelo de lenguaje procesa."
 author: Jorge Zamora Rey
-date: 16-04-2026
+date: 2026-04-16
 tags:
   - Fundamentos
 ---

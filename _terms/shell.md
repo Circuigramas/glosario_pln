@@ -2,7 +2,7 @@
 title: "Shell (intérprete de comandos)"
 summary: "Aplicación que lee los comandos del usuario e invoca los servicios necesarios para ejecutarlos"
 author: Jorge Zamora Rey
-date: 02-04-2026
+date: 2026-04-02
 tags:
   - Informática
 ---
