@@ -5,4 +5,6 @@ author: Jorge Zamora Rey
 date: 2026-04-16
 tags:
   - Lingüística
+subtags:
+  - Escuela de Londres
 ---
