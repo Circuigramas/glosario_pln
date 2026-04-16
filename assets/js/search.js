@@ -30,10 +30,11 @@
       .replace(/>/g, '&gt;');
   }
 
-  function renderTags(tags) {
-    if (!tags || !tags.length) return '';
-    const spans = tags.map(t => `<span class="tag">${esc(t)}</span>`).join('');
-    return `<div class="tags">${spans}</div>`;
+  function renderTags(tags, subtags) {
+    const mainSpans = (tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+    const subSpans  = (subtags || []).map(t => `<span class="tag tag--sub">${esc(t)}</span>`).join('');
+    if (!mainSpans && !subSpans) return '';
+    return `<div class="tags">${mainSpans}${subSpans}</div>`;
   }
 
   function updateSubtagDropdown() {
@@ -77,7 +78,7 @@
       `<a class="card" href="${esc(term.url)}">
         <h2>${esc(term.title)}</h2>
         <p class="preview">${esc(term.summary)}</p>
-        ${renderTags(term.tags)}
+        ${renderTags(term.tags, term.subtags)}
       </a>`
     ).join('');
   }
