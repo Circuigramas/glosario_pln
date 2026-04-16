@@ -8,9 +8,11 @@ Visita el sitio: https://circuigramas.github.io/glosario_pln/
 
 ## Cómo agregar una nueva entrada
 
-1. Crea un archivo `.md` dentro de la carpeta `_terms/`. El nombre del archivo será la URL del término (por ejemplo, `redes-neuronales.md` → `/terms/redes-neuronales/`).
+1. Crea un archivo `.md` dentro de la carpeta `_terms/`. El nombre del archivo será la URL del término (por ejemplo, `redes_neuronales.md` → `/terms/redes_neuronales/`).
+   
+3. Tienes que especificar en el nombre del archivo, si lo haces directamente desde Github, que es `.md`. También, si tiene más de una palabra el término, podéis usar `_` para separar las palabras en el NOMBRE DEL ARCHIVO.
 
-2. Agrega el siguiente bloque de metadatos al inicio del archivo:
+4. Agrega el siguiente bloque de metadatos al inicio del archivo:
 
 ```yaml
 ---
@@ -23,6 +25,7 @@ tags:
   - Etiqueta2
 ---
 ```
+Nótese que en el `title` no hace falta usar `_`.
 
 3. Debajo del encabezado de los metadatos, escribe el contenido de la entrada en markdown.
 
