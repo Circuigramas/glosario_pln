@@ -6,20 +6,11 @@ Visita el sitio: https://circuigramas.github.io/glosario_pln/
 
 ---
 
-## Tecnologías utilizadas
-
-- **Jekyll** — generador de sitios estáticos que convierte los archivos Markdown en páginas HTML.
-- **GitHub Pages** — servicio de alojamiento gratuito que publica el sitio automáticamente con cada cambio en la rama `main`.
-- **jekyll-seo-tag** — plugin que añade metadatos de SEO a cada página.
-- **Kramdown con GFM** — procesador de Markdown que permite formato extendido al estilo GitHub.
-
----
-
 ## Cómo agregar una nueva entrada
 
 1. Crea un archivo `.md` dentro de la carpeta `_terms/`. El nombre del archivo será la URL del término (por ejemplo, `redes-neuronales.md` → `/terms/redes-neuronales/`).
 
-2. Agrega el siguiente bloque de metadatos al inicio del archivo (front matter):
+2. Agrega el siguiente bloque de metadatos al inicio del archivo:
 
 ```yaml
 ---
@@ -33,9 +24,12 @@ tags:
 ---
 ```
 
-3. Debajo del front matter, escribe el contenido de la entrada en Markdown.
+3. Debajo del encabezado de los metadatos, escribe el contenido de la entrada en markdown.
 
 4. Guarda el archivo, haz commit y push a la rama `main`. GitHub Pages publicará el cambio automáticamente en unos segundos.
+
+Nota: los tags serán los filtros disponibles en la página, así que intenta usar únicamente 1, o los más necesarios. El `summary` será
+la breve descripción o definición que aparezca en la vista previa de la entrada del término.
 
 ### Ejemplo mínimo
 
