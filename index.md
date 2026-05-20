@@ -16,17 +16,12 @@ permalink: /
   {% endfor %}
 </div>
 
-<div id="subtag-filters" class="subtag-filters">
-  <select id="subtag-select" style="display:none">
+<div id="subtag-filters" class="subtag-filters" style="display:none">
+  <select id="subtag-select">
     <option value="">Todos los subtemas</option>
   </select>
   <select id="author-select">
     <option value="">Todos los autores</option>
-  </select>
-  <select id="sort-select">
-    <option value="alpha">A–Z</option>
-    <option value="newest">Más reciente</option>
-    <option value="oldest">Más antiguo</option>
   </select>
 </div>
 
