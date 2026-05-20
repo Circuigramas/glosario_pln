@@ -4,6 +4,8 @@ summary: "Campo interdisciplinar que estudia cómo conseguir que las máquinas s
 author: Jorge Zamora Rey
 date: 2026-05-20
 tags:
+  - Fundamentos
+subtags:
   - Disciplinas
 ---
 
