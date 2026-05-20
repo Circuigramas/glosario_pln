@@ -47,7 +47,7 @@ Además, cabe destacar el PLN se inscribe habitualmente dentro de la inteligenci
 La dimensión práctica del PLN, esto es, aquella orientada al desarrollo de sistemas que operan con lengua natural, mediante la implementación de algoritmos desarrollados por la lingüística computacional y/o técnicas de otras áreas de la inteligencia artificial como la ingeniería del conocimiento o el aprendizaje automático.
 
 # Aparece por primera vez en...
-[¿Qué es el Procesamiento del Lenguaje Natural?]
+[¿Qué es el Procesamiento del Lenguaje Natural?](https://circuigramas.substack.com/publish/post/198104448?r=7c4xb1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 
 
 # Referencias bibliográficas
