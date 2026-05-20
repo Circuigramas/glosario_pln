@@ -35,19 +35,23 @@ Además, cabe destacar el PLN se inscribe habitualmente dentro de la inteligenci
 - La dimensión práctica del PLN, esto es, aquella orientada al desarrollo de sistemas que operan con lengua natural, mediante la implementación de algoritmos desarrollados por la lingüística computacional y/o técnicas de otras áreas de la inteligencia artificial como la ingeniería del conocimiento o el aprendizaje automático. 
 
 # Otras denominaciones
-- Ingeniería del lenguaje
-- Ingeniería lingüística
+- Ingeniería del lenguaje (Unión Europea, 1998)
+- Ingeniería lingüística (Llisterri y Garrido Almiñana, 1998; Ontology Engineering Group, sf)
 - Lingüística computacional (Schubert, 2014)
+- Tecnologías del lenguaje
 
 # Términos relacionados
 - [Lingüística computacional](https://circuigramas.github.io/glosario_pln/lc/)
 
 # Artículo de Circuigramas donde aparece por primera vez
-[¿Qué es el Procesamiento del Lenguaje Natural?](
+[¿Qué es el Procesamiento del Lenguaje Natural?]
 
 # Referencias bibliográficas
 - ACL. (sf). _What is the ACL and what is Computational Linguistics?_. [https://www.aclweb.org/portal/what-is-cl](https://www.aclweb.org/portal/what-is-cl) (20/06/2026, 17:15)
-- Russell, S. y Norvig, P. (2022). _Artificial Intelligence: A Modern Approach_. Pearson.
+- Llisterri, J.; Garrido Almiñana, J. M. (1998). La ingeniería lingüística en España. En Centro Virtual Cervantes. _Español en el mundo: anuario de 1998_. Recuperado de [https://cvc.cervantes.es/lengua/anuario/anuario_98/llisterri/p01.htm](https://cvc.cervantes.es/lengua/anuario/anuario_98/llisterri/p01.htm) (20/05/2026, 18:59)
+- Ontology Engineering Group. (sf). _Ingeniería lingüística_. Recuperado de [https://oeg.fi.upm.es/index.php/es/researchareas/6-naturallanguageprocessing/index.html](https://oeg.fi.upm.es/index.php/es/researchareas/6-naturallanguageprocessing/index.html) (20/05/2026, 19:12) 
+- Russell, S. ; Norvig, P. (2022). _Artificial Intelligence: A Modern Approach_. Pearson.
 - Schubert, L. \[Lenhart] (2014). Computational Linguistics. _Stanford Encyclopedia of Philosohy_. Recuperado de [https://plato.stanford.edu/entries/computational-linguistics/](https://plato.stanford.edu/entries/computational-linguistics/) (20/05/2026, 17:00)
+- Unión Europea (1998). _Ingeniería del lenguaje: progresos y perspectivas_. CORDIS. Recuperado de [https://cordis.europa.eu/article/id/9677-language-engineering-progress-and-prospects/es](https://cordis.europa.eu/article/id/9677-language-engineering-progress-and-prospects/es) (20/05/2026, 19:21)
 - SEPLN. (sf). _La Revista: Temáticas de la Revista_. Recuperado de [https://www.sepln.org/la-revista](https://www.sepln.org/la-revista) (20/05/2026, 17:40)
 
