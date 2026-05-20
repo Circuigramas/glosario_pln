@@ -220,27 +220,61 @@ a.tag:hover { background: #c5ddd6; }
 }
 .term-body pre code { background: none; padding: 0; }
 
-/* ── Term pill rows (aliases & related) ── */
-.pills-label {
+/* ── Term classification (tema / subtema) ── */
+.term-classification {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.classification-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.classification-label {
   font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #7a8e85;
-  align-self: center;
-  white-space: nowrap;
+  min-width: 4.5rem;
 }
-.tag--alias {
-  background: #f0ebe1;
-  color: #5a4a2a;
+
+/* ── Term metadata lists (aliases & related) ── */
+.term-metadata-block {
+  margin-top: 0.9rem;
 }
-.alias-source {
-  font-size: 0.78em;
-  opacity: 0.75;
+.metadata-block-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7a8e85;
+  margin-bottom: 0.3rem;
 }
-.tag--related {
-  background: #d6e4f7;
+.metadata-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.metadata-list li {
+  font-size: 0.9rem;
+  color: #0a1325;
+  padding: 0.1rem 0;
+}
+.metadata-list li::before {
+  content: "·";
+  margin-right: 0.4rem;
+  color: #b8d4c8;
+}
+.metadata-list a {
   color: #1a3a5c;
   text-decoration: none;
 }
-a.tag--related:hover { background: #b8d0ee; }
+.metadata-list a:hover { text-decoration: underline; }
+.alias-source {
+  font-size: 0.82em;
+  color: #7a8e85;
+}

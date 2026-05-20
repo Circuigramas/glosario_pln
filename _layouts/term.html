@@ -22,31 +22,41 @@ layout: default
   {% endif %}
 
   {% if page.tags and page.tags.size > 0 or page.subtags and page.subtags.size > 0 %}
-    <div class="tags">
+    <div class="term-classification">
       {% for tag in page.tags %}
+      <div class="classification-row">
+        <span class="classification-label">Tema</span>
         <a href="{{ '/' | relative_url }}?tag={{ tag | uri_escape }}" class="tag">{{ tag }}</a>
+      </div>
       {% endfor %}
       {% for subtag in page.subtags %}
+      <div class="classification-row">
+        <span class="classification-label">Subtema</span>
         <span class="tag tag--sub">{{ subtag }}</span>
+      </div>
       {% endfor %}
     </div>
   {% endif %}
 
   {% if page.aliases %}
-    <div class="tags">
-      <span class="pills-label">También conocido como</span>
-      {% for alias in page.aliases %}
-        <span class="tag tag--alias">{{ alias.name }}{% if alias.source %}<span class="alias-source"> ({{ alias.source }})</span>{% endif %}</span>
-      {% endfor %}
+    <div class="term-metadata-block">
+      <span class="metadata-block-label">También conocido como</span>
+      <ul class="metadata-list">
+        {% for alias in page.aliases %}
+        <li>{{ alias.name }}{% if alias.source %} <span class="alias-source">({{ alias.source }})</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
     </div>
   {% endif %}
 
   {% if page.related %}
-    <div class="tags">
-      <span class="pills-label">Véase también</span>
-      {% for item in page.related %}
-        <a href="{{ site.baseurl }}/terms/{{ item.slug }}/" class="tag tag--related">{{ item.title }}</a>
-      {% endfor %}
+    <div class="term-metadata-block">
+      <span class="metadata-block-label">Véase también</span>
+      <ul class="metadata-list">
+        {% for item in page.related %}
+        <li><a href="{{ site.baseurl }}/terms/{{ item.slug }}/">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
   {% endif %}
 
