@@ -32,7 +32,11 @@ Dichas tareas serían las aplicaciones de estos sistemas. En el esquema aparecen
 Además, cabe destacar el PLN se inscribe habitualmente dentro de la inteligencia artificial, ya que algunos autores consideran que cualquier sistema, para ser inteligente, debe ser capaz de operar con el lenguaje humano (Russell y Norvig, 2022).
 
 # También se refiere a...
-- La dimensión práctica del PLN, esto es, aquella orientada al desarrollo de sistemas que operan con lengua natural, mediante la implementación de algoritmos desarrollados por la lingüística computacional y/o técnicas de otras áreas de la inteligencia artificial como la ingeniería del conocimiento o el aprendizaje automático. 
+## 1
+La dimensión práctica del PLN, esto es, aquella orientada al desarrollo de sistemas que operan con lengua natural, mediante la implementación de algoritmos desarrollados por la lingüística computacional y/o técnicas de otras áreas de la inteligencia artificial como la ingeniería del conocimiento o el aprendizaje automático.
+
+# Aparece por primera vez en...
+[¿Qué es el Procesamiento del Lenguaje Natural?]
 
 # Otras denominaciones
 - Ingeniería del lenguaje (Unión Europea, 1998)
@@ -42,9 +46,6 @@ Además, cabe destacar el PLN se inscribe habitualmente dentro de la inteligenci
 
 # Términos relacionados
 - [Lingüística computacional](https://circuigramas.github.io/glosario_pln/lc/)
-
-# Artículo de Circuigramas donde aparece por primera vez
-[¿Qué es el Procesamiento del Lenguaje Natural?]
 
 # Referencias bibliográficas
 - ACL. (sf). _What is the ACL and what is Computational Linguistics?_. [https://www.aclweb.org/portal/what-is-cl](https://www.aclweb.org/portal/what-is-cl) (20/06/2026, 17:15)
