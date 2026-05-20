@@ -1,22 +1,27 @@
 ---
 title: "Procesamiento del Lenguaje Natural (PLN)"
-summary: "Campo de la IA que estudia cómo las computadoras pueden entender, interpretar y generar lenguaje humano."
+summary: "Campo interdisciplinar que estudia cómo conseguir que las máquinas sean capaces de comprender y producir el lenguaje humano"
 author: Jorge Zamora Rey
-date: 2026-04-16
+date: 2026-05-20
 tags:
   - Fundamentos
 ---
 
-El **Procesamiento del Lenguaje Natural** (PLN, o NLP en inglés) es una rama de la inteligencia artificial que se ocupa de la interacción entre computadoras y lenguaje humano. Su objetivo es que las máquinas puedan leer, entender y generar texto o voz de manera útil.
+Campo interdisciplinar que estudia el desarrollo de sistemas capaces de comprender y producir lenguaje humano. Es el término más amplio del área (preferido tanto en el ámbito académico como en el industrial) y engloba dos vertientes: la lingüística computacional, orientada a la elaboración de modelos computacionales del lenguaje, y una dimensión práctica, normalmente identificada también como PLN, orientada al desarrollo de sistemas y algoritmos que operan con lengua natural.
 
-## Tareas principales
+Para que un sistema sea competente en lengua natural debe desarrollar dos capacidades: la comprensión, que le permite procesar e interpretar texto o voz, y la producción, que le permite generarlos. De la combinación de ambas emergen las aplicaciones del campo: traducción automática o sistemas de diálogo, entre otras.
 
-- **Clasificación de texto** — determinar la categoría de un documento (spam, noticias, sentimientos).
-- **Reconocimiento de entidades nombradas (NER)** — identificar nombres de personas, lugares u organizaciones.
-- **Traducción automática** — convertir texto de un idioma a otro.
-- **Generación de texto** — producir texto coherente a partir de un contexto.
-- **Respuesta a preguntas** — responder preguntas en lenguaje natural a partir de documentos.
+El PLN se inscribe habitualmente dentro de la inteligencia artificial, ya que se considera que cualquier sistema verdaderamente inteligente debe ser capaz de operar con el lenguaje humano.
 
-## Por qué es difícil
+# Otras denominaciones
+- Ingeniería del lenguaje
+- Ingeniería lingüística
+- Lingüística computacional (Schubert, 2014)
 
-El lenguaje humano es ambiguo, dependiente del contexto y lleno de excepciones. Una misma palabra puede tener significados completamente distintos según la oración, y el sarcasmo o la ironía son difíciles de detectar incluso para humanos.
+# Términos relacionados
+- Lingüística computacional
+
+# Referencias bibliográficas
+Schubert, L. [Lenhart] (2014). Computational Linguistics. _Stanford Encyclopedia of Philosohy_. Recuperado de [https://plato.stanford.edu/entries/computational-linguistics/](https://plato.stanford.edu/entries/computational-linguistics/)
+ACL. (sf). _What is the ACL and what is Computational Linguistics?_. [https://www.aclweb.org/portal/what-is-cl](https://www.aclweb.org/portal/what-is-cl)
+
