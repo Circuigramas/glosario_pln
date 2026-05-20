@@ -16,7 +16,7 @@ permalink: /
   {% endfor %}
 </div>
 
-<div id="secondary-filters" class="subtag-filters">
+<div id="subtag-filters" class="subtag-filters">
   <select id="subtag-select" style="display:none">
     <option value="">Todos los subtemas</option>
   </select>
