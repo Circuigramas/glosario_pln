@@ -9,7 +9,7 @@ tags:
 
 Campo interdisciplinar que estudia el desarrollo de sistemas capaces de comprender y producir lenguaje humano. Es el término más amplio del área (preferido tanto en el ámbito académico como en el industrial) y engloba dos vertientes: la lingüística computacional, orientada a la elaboración de modelos computacionales del lenguaje, y una dimensión práctica, normalmente identificada también como PLN, orientada al desarrollo de sistemas y algoritmos que operan con lengua natural.
 
-![Esquema de nuestro concepto de procesamiento del lenguaje natural con ramificaciones a inicios, objetivo y aspectos prácticos y teóricos](https://circuigramas.github.io/glosario_pln/assets/img/nombre.png)
+![Esquema de nuestro concepto de procesamiento del lenguaje natural con ramificaciones a inicios, objetivo y aspectos prácticos y teóricos](https://circuigramas.github.io/glosario_pln/assets/img/Esquema_PLN_articulo_inaugural.png)
 
 Para que un sistema sea competente en lengua natural debe desarrollar dos capacidades: la comprensión, que le permite procesar e interpretar texto o voz, y la producción, que le permite generarlos. De la combinación de ambas emergen las aplicaciones del campo: traducción automática o sistemas de diálogo, entre otras.
 
