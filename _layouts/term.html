@@ -21,10 +21,31 @@ layout: default
     </p>
   {% endif %}
 
-  {% if page.tags and page.tags.size > 0 %}
+  {% if page.tags and page.tags.size > 0 or page.subtags and page.subtags.size > 0 %}
     <div class="tags">
       {% for tag in page.tags %}
         <a href="{{ '/' | relative_url }}?tag={{ tag | uri_escape }}" class="tag">{{ tag }}</a>
+      {% endfor %}
+      {% for subtag in page.subtags %}
+        <span class="tag tag--sub">{{ subtag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.aliases %}
+    <div class="tags">
+      <span class="pills-label">También conocido como</span>
+      {% for alias in page.aliases %}
+        <span class="tag tag--alias">{{ alias.name }}{% if alias.source %}<span class="alias-source"> ({{ alias.source }})</span>{% endif %}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.related %}
+    <div class="tags">
+      <span class="pills-label">Véase también</span>
+      {% for item in page.related %}
+        <a href="{{ site.baseurl }}/terms/{{ item.slug }}/" class="tag tag--related">{{ item.title }}</a>
       {% endfor %}
     </div>
   {% endif %}
@@ -42,27 +63,5 @@ layout: default
   <div class="term-body">
     {{ content }}
   </div>
-
-  {% if page.aliases %}
-  <section class="term-aliases">
-    <h2>Otras denominaciones</h2>
-    <ul>
-      {% for alias in page.aliases %}
-      <li>{{ alias.name }}{% if alias.source %} <span class="alias-source">({{ alias.source }})</span>{% endif %}</li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
-  {% if page.related %}
-  <section class="term-related">
-    <h2>Términos relacionados</h2>
-    <ul>
-      {% for item in page.related %}
-      <li><a href="{{ site.baseurl }}/terms/{{ item.slug }}/">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
 
 </article>

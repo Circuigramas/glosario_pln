@@ -16,13 +16,10 @@ permalink: /
   {% endfor %}
 </div>
 
-<div id="subtag-filters" class="subtag-filters" style="display:none">
-  <select id="subtag-select">
+<div id="secondary-filters" class="subtag-filters">
+  <select id="subtag-select" style="display:none">
     <option value="">Todos los subtemas</option>
   </select>
-</div>
-
-<div class="controls-bar">
   <select id="author-select">
     <option value="">Todos los autores</option>
   </select>

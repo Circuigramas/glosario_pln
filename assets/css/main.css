@@ -88,10 +88,11 @@ footer a { color: #0a1325; text-decoration: none; }
 .tag-btn:hover  { background: #c5ddd6; }
 .tag-btn.active { background: #0a1325; color: #fefefe; }
 
-/* ── Subtag dropdown ── */
+/* ── Secondary filters (subtag + author + sort) ── */
 .subtag-filters {
   display: flex;
   justify-content: center;
+  gap: 0.6rem;
   padding: 0.5rem 1rem 0.6rem;
   background: #fefefe;
   border-bottom: 1px solid #c5ddd6;
@@ -108,28 +109,6 @@ footer a { color: #0a1325; text-decoration: none; }
   transition: border-color 0.2s;
 }
 .subtag-filters select:focus { border-color: #0a1325; }
-
-/* ── Controls bar (sort + author) ── */
-.controls-bar {
-  display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  padding: 0.5rem 1rem 0.6rem;
-  background: #fefefe;
-  border-bottom: 1px solid #c5ddd6;
-}
-.controls-bar select {
-  padding: 0.35rem 0.9rem;
-  border: 1px solid #b8d4c8;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  background: #fefefe;
-  color: #0a1325;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.2s;
-}
-.controls-bar select:focus { border-color: #0a1325; }
 
 /* ── Term list (index) ── */
 .list-container {
@@ -241,50 +220,27 @@ a.tag:hover { background: #c5ddd6; }
 }
 .term-body pre code { background: none; padding: 0; }
 
-/* ── Term aliases & related ── */
-.term-aliases,
-.term-related {
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #c5ddd6;
-}
-.term-aliases h2,
-.term-related h2 {
-  font-size: 0.8rem;
+/* ── Term pill rows (aliases & related) ── */
+.pills-label {
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: #7a8e85;
-  margin-bottom: 0.6rem;
+  align-self: center;
+  white-space: nowrap;
 }
-.term-aliases ul,
-.term-related ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-.term-aliases li {
-  background: #e2f1eb;
-  border-radius: 99px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
-  color: #0a1325;
+.tag--alias {
+  background: #f0ebe1;
+  color: #5a4a2a;
 }
 .alias-source {
-  font-size: 0.78rem;
-  color: #7a8e85;
+  font-size: 0.78em;
+  opacity: 0.75;
 }
-.term-related li a {
-  display: inline-block;
+.tag--related {
   background: #d6e4f7;
   color: #1a3a5c;
-  border-radius: 99px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
   text-decoration: none;
-  transition: background 0.15s;
 }
-.term-related li a:hover { background: #b8d0ee; }
+a.tag--related:hover { background: #b8d0ee; }

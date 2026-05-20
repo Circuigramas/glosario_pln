@@ -4,7 +4,6 @@
   const countEl   = document.getElementById('count');
   const resultsEl = document.getElementById('results');
   const tagBtns   = document.querySelectorAll('.tag-btn');
-  const subtagFiltersEl = document.getElementById('subtag-filters');
   const subtagSelect    = document.getElementById('subtag-select');
   const authorSelect    = document.getElementById('author-select');
   const sortSelect      = document.getElementById('sort-select');
@@ -31,7 +30,6 @@
       opt.textContent = a;
       authorSelect.appendChild(opt);
     });
-    authorSelect.closest('.controls-bar').style.display = '';
   } else {
     authorSelect.style.display = 'none';
   }
@@ -60,14 +58,14 @@
     const subtags = activeTag ? (subtagMap[activeTag] || []) : [];
     activeSubtag = '';
     if (subtags.length === 0) {
-      subtagFiltersEl.style.display = 'none';
+      subtagSelect.style.display = 'none';
       return;
     }
     subtagSelect.innerHTML =
       '<option value="">Todos los subtemas</option>' +
       subtags.map(st => `<option value="${esc(st)}">${esc(st)}</option>`).join('');
     subtagSelect.value = '';
-    subtagFiltersEl.style.display = '';
+    subtagSelect.style.display = '';
   }
 
   function render() {
