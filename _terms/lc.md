@@ -7,6 +7,14 @@ tags:
   - Fundamentos
 subtags:
   - Disciplinas
+aliases:
+  - name: "Ingeniería del lenguaje"
+  - name: "Ingeniería lingüística"
+  - name: "Lingüística computacional"
+    source: "Schubert, 2014"
+related:
+  - title: "Procesamiento del lenguaje natural (PLN)"
+    slug: "pln"
 ---
 
 Campo interdisciplinar que estudia el desarrollo de sistemas capaces de comprender y producir lenguaje humano. Es el término más amplio del área (preferido tanto en el ámbito académico como en el industrial) y engloba dos vertientes: la lingüística computacional, orientada a la elaboración de modelos computacionales del lenguaje, y una dimensión práctica, normalmente identificada también como PLN, orientada al desarrollo de sistemas y algoritmos que operan con lengua natural.
@@ -17,13 +25,6 @@ Para que un sistema sea competente en lengua natural debe desarrollar dos capaci
 
 El PLN se inscribe habitualmente dentro de la inteligencia artificial, ya que se considera que cualquier sistema verdaderamente inteligente debe ser capaz de operar con el lenguaje humano.
 
-# Otras denominaciones
-- Ingeniería del lenguaje
-- Ingeniería lingüística
-- [Lingüística computacional](https://circuigramas.github.io/glosario_pln/lc/) (Schubert, 2014)
-
-# Términos relacionados
-- Lingüística computacional
 
 # Referencias bibliográficas
 - Schubert, L. [Lenhart] (2014). Computational Linguistics. _Stanford Encyclopedia of Philosohy_. Recuperado de [https://plato.stanford.edu/entries/computational-linguistics/](https://plato.stanford.edu/entries/computational-linguistics/)

@@ -7,6 +7,17 @@ tags:
   - Fundamentos
 subtags:
   - Disciplinas
+aliases:
+  - name: "Ingeniería del lenguaje"
+    source: "Unión Europea, 1998"
+  - name: "Ingeniería lingüística"
+    source: "Llisterri y Garrido Almiñana, 1998; Ontology Engineering Group, sf"
+  - name: "Lingüística computacional"
+    source: "Schubert, 2014"
+  - name: "Tecnologías del lenguaje"
+related:
+  - title: "Lingüística computacional"
+    slug: "lc"
 ---
 # Definición
 Campo interdisciplinar que estudia el desarrollo de sistemas capaces de comprender y producir lenguaje humano. Es el término más amplio del área (preferido tanto en el ámbito académico como en el industrial) y engloba dos vertientes: la lingüística computacional, orientada a la elaboración de modelos computacionales del lenguaje (ACL, sf), y una dimensión práctica, normalmente identificada también como PLN, orientada al desarrollo de sistemas que operan con lengua natural.
@@ -38,14 +49,6 @@ La dimensión práctica del PLN, esto es, aquella orientada al desarrollo de sis
 # Aparece por primera vez en...
 [¿Qué es el Procesamiento del Lenguaje Natural?]
 
-# Otras denominaciones
-- Ingeniería del lenguaje (Unión Europea, 1998)
-- Ingeniería lingüística (Llisterri y Garrido Almiñana, 1998; Ontology Engineering Group, sf)
-- Lingüística computacional (Schubert, 2014)
-- Tecnologías del lenguaje
-
-# Términos relacionados
-- [Lingüística computacional](https://circuigramas.github.io/glosario_pln/lc/)
 
 # Referencias bibliográficas
 - ACL. (sf). _What is the ACL and what is Computational Linguistics?_. [https://www.aclweb.org/portal/what-is-cl](https://www.aclweb.org/portal/what-is-cl) (20/06/2026, 17:15)

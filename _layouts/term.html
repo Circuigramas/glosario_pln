@@ -43,4 +43,26 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.aliases %}
+  <section class="term-aliases">
+    <h2>Otras denominaciones</h2>
+    <ul>
+      {% for alias in page.aliases %}
+      <li>{{ alias.name }}{% if alias.source %} <span class="alias-source">({{ alias.source }})</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.related %}
+  <section class="term-related">
+    <h2>Términos relacionados</h2>
+    <ul>
+      {% for item in page.related %}
+      <li><a href="{{ site.baseurl }}/terms/{{ item.slug }}/">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
 </article>

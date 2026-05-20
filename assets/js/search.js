@@ -6,6 +6,8 @@
   const tagBtns   = document.querySelectorAll('.tag-btn');
   const subtagFiltersEl = document.getElementById('subtag-filters');
   const subtagSelect    = document.getElementById('subtag-select');
+  const authorSelect    = document.getElementById('author-select');
+  const sortSelect      = document.getElementById('sort-select');
 
   // Build map: mainTag → sorted array of subtags
   const subtagMap = {};
@@ -19,8 +21,25 @@
     subtagMap[k] = [...subtagMap[k]].sort((a, b) => a.localeCompare(b, 'es'));
   });
 
+  // Populate author dropdown (only if more than one author)
+  const authors = [...new Set(data.map(t => t.author).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, 'es'));
+  if (authors.length > 1) {
+    authors.forEach(a => {
+      const opt = document.createElement('option');
+      opt.value = a;
+      opt.textContent = a;
+      authorSelect.appendChild(opt);
+    });
+    authorSelect.closest('.controls-bar').style.display = '';
+  } else {
+    authorSelect.style.display = 'none';
+  }
+
   let activeTag    = '';
   let activeSubtag = '';
+  let activeAuthor = '';
+  let sortOrder    = 'alpha';
   let query        = '';
 
   function esc(s) {
@@ -59,12 +78,18 @@
         (term.tags || []).includes(activeTag);
       const matchesSubtag = activeSubtag === '' ||
         (term.subtags || []).includes(activeSubtag);
+      const matchesAuthor = activeAuthor === '' || term.author === activeAuthor;
       const matchesSearch = q === '' ||
         term.title.toLowerCase().includes(q) ||
         (term.summary || '').toLowerCase().includes(q) ||
-        (term.tags || []).some(t => t.toLowerCase().includes(q));
-      return matchesTag && matchesSubtag && matchesSearch;
-    }).sort((a, b) => a.title.localeCompare(b.title, 'es'));
+        (term.tags || []).some(t => t.toLowerCase().includes(q)) ||
+        (term.aliases || []).some(a => a.toLowerCase().includes(q));
+      return matchesTag && matchesSubtag && matchesAuthor && matchesSearch;
+    }).sort((a, b) => {
+      if (sortOrder === 'newest') return new Date(b.date) - new Date(a.date);
+      if (sortOrder === 'oldest') return new Date(a.date) - new Date(b.date);
+      return a.title.localeCompare(b.title, 'es');
+    });
 
     countEl.textContent =
       filtered.length + ' término' + (filtered.length !== 1 ? 's' : '');
@@ -102,6 +127,18 @@
   // Subtag dropdown
   subtagSelect.addEventListener('change', e => {
     activeSubtag = e.target.value;
+    render();
+  });
+
+  // Author dropdown
+  authorSelect.addEventListener('change', e => {
+    activeAuthor = e.target.value;
+    render();
+  });
+
+  // Sort selector
+  sortSelect.addEventListener('change', e => {
+    sortOrder = e.target.value;
     render();
   });
 

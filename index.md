@@ -22,6 +22,17 @@ permalink: /
   </select>
 </div>
 
+<div class="controls-bar">
+  <select id="author-select">
+    <option value="">Todos los autores</option>
+  </select>
+  <select id="sort-select">
+    <option value="alpha">A–Z</option>
+    <option value="newest">Más reciente</option>
+    <option value="oldest">Más antiguo</option>
+  </select>
+</div>
+
 <div class="list-container">
   <p class="count" id="count"></p>
   <div id="results"></div>
@@ -37,7 +48,10 @@ permalink: /
       "summary": {{ term.summary | default: "" | jsonify }},
       "tags":    {{ term.tags    | default: [] | jsonify }},
       "url":     {{ term.url     | relative_url | jsonify }},
-      "subtags": {% if term.subtags %}{{ term.subtags | jsonify }}{% else %}[]{% endif %}
+      "subtags": {% if term.subtags %}{{ term.subtags | jsonify }}{% else %}[]{% endif %},
+      "aliases": {% if term.aliases %}{{ term.aliases | map: "name" | jsonify }}{% else %}[]{% endif %},
+      "author": {{ term.author | default: "" | jsonify }},
+      "date":   {{ term.date | date: "%Y-%m-%d" | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
