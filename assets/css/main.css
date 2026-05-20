@@ -177,6 +177,8 @@ a.tag:hover { background: #c5ddd6; }
 
 .term-figure { margin: 1.5rem 0; }
 .term-figure img {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
@@ -190,7 +192,7 @@ a.tag:hover { background: #c5ddd6; }
 }
 .term-body h2 { font-size: 1.15rem; color: #0a1325; margin: 1.75rem 0 0.5rem; }
 .term-body h3 { font-size: 1rem; color: #0a1325; margin: 1.25rem 0 0.4rem; }
-.term-body p  { margin-bottom: 0.9rem; text-align: justify; }
+.term-body p  { margin-bottom: 0.9rem; text-align: justify !important; }
 .term-body ul, .term-body ol { margin: 0.5rem 0 0.9rem 1.5rem; }
 .term-body li { margin-bottom: 0.3rem; }
 .term-body code {
