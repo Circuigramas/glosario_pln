@@ -22,6 +22,6 @@ El PLN se inscribe habitualmente dentro de la inteligencia artificial, ya que se
 - Lingüística computacional
 
 # Referencias bibliográficas
-Schubert, L. [Lenhart] (2014). Computational Linguistics. _Stanford Encyclopedia of Philosohy_. Recuperado de [https://plato.stanford.edu/entries/computational-linguistics/](https://plato.stanford.edu/entries/computational-linguistics/)
-ACL. (sf). _What is the ACL and what is Computational Linguistics?_. [https://www.aclweb.org/portal/what-is-cl](https://www.aclweb.org/portal/what-is-cl)
+- Schubert, L. [Lenhart] (2014). Computational Linguistics. _Stanford Encyclopedia of Philosohy_. Recuperado de [https://plato.stanford.edu/entries/computational-linguistics/](https://plato.stanford.edu/entries/computational-linguistics/)
+- ACL. (sf). _What is the ACL and what is Computational Linguistics?_. [https://www.aclweb.org/portal/what-is-cl](https://www.aclweb.org/portal/what-is-cl)
 
