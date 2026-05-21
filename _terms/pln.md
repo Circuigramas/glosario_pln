@@ -20,7 +20,7 @@ related:
     slug: "lc"
 first_appearance:
   title: "¿Qué es el Procesamiento del Lenguaje Natural?"
-  url: "https://circuigramas.substack.com/publish/post/198104448?r=7c4xb1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+  url: "https://circuigramas.substack.com/p/que-es-el-procesamiento-del-lenguaje"
 status: finished
 ---
 # Definición
