@@ -10,7 +10,8 @@ permalink: /
 
 <div class="tag-filters" id="tag-filters">
   <button class="tag-btn active" data-tag="">Todos</button>
-  {% assign all_tags = site.terms | map: "tags" | join: "," | split: "," | uniq | sort %}
+  {% assign finished_terms = site.terms | where: "status", "finished" %}
+  {% assign all_tags = finished_terms | map: "tags" | join: "," | split: "," | uniq | sort %}
   {% for tag in all_tags %}
     <button class="tag-btn" data-tag="{{ tag | escape }}">{{ tag }}</button>
   {% endfor %}
@@ -32,7 +33,7 @@ permalink: /
 
 <script id="terms-data" type="application/json">
 [
-  {% assign sorted_terms = site.terms | sort: "title" %}
+  {% assign sorted_terms = site.terms | where: "status", "finished" | sort: "title" %}
   {% for term in sorted_terms %}
     {
       "slug":    {{ term.slug    | jsonify }},

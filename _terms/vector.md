@@ -7,6 +7,7 @@ tags:
   - Matemáticas
 subtags:
   - Álgebra Lineal
+status: working
 ---
 
 El **Procesamiento del Lenguaje Natural** (PLN, o NLP en inglés) es una rama de la inteligencia artificial que se ocupa de la interacción entre computadoras y lenguaje humano. Su objetivo es que las máquinas puedan leer, entender y generar texto o voz de manera útil.

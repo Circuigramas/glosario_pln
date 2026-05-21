@@ -7,4 +7,5 @@ tags:
   - Matemáticas
 subtags:
   - Álgebra Lineal
+status: working
 ---

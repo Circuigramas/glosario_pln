@@ -18,6 +18,10 @@ aliases:
 related:
   - title: "Lingüística computacional"
     slug: "lc"
+first_appearance:
+  title: "¿Qué es el Procesamiento del Lenguaje Natural?"
+  url: "https://circuigramas.substack.com/publish/post/198104448?r=7c4xb1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+status: finished
 ---
 # Definición
 Campo interdisciplinar que estudia el desarrollo de sistemas capaces de comprender y producir lenguaje humano. Es el término más amplio del área (preferido tanto en el ámbito académico como en el industrial) y engloba dos vertientes: la lingüística computacional, orientada a la elaboración de modelos computacionales del lenguaje (ACL, sf), y una dimensión práctica, normalmente identificada también como PLN, orientada al desarrollo de sistemas que operan con lengua natural.
@@ -45,9 +49,6 @@ Además, cabe destacar el PLN se inscribe habitualmente dentro de la inteligenci
 # También se refiere a...
 ## 1
 La dimensión práctica del PLN, esto es, aquella orientada al desarrollo de sistemas que operan con lengua natural, mediante la implementación de algoritmos desarrollados por la lingüística computacional y/o técnicas de otras áreas de la inteligencia artificial como la ingeniería del conocimiento o el aprendizaje automático.
-
-# Aparece por primera vez en...
-[¿Qué es el Procesamiento del Lenguaje Natural?](https://circuigramas.substack.com/publish/post/198104448?r=7c4xb1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 
 
 # Referencias bibliográficas

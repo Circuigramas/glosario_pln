@@ -15,6 +15,7 @@ aliases:
 related:
   - title: "Procesamiento del lenguaje natural (PLN)"
     slug: "pln"
+status: working
 ---
 
 Campo interdisciplinar que estudia el desarrollo de sistemas capaces de comprender y producir lenguaje humano. Es el término más amplio del área (preferido tanto en el ámbito académico como en el industrial) y engloba dos vertientes: la lingüística computacional, orientada a la elaboración de modelos computacionales del lenguaje, y una dimensión práctica, normalmente identificada también como PLN, orientada al desarrollo de sistemas y algoritmos que operan con lengua natural.

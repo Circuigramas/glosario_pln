@@ -60,6 +60,15 @@ layout: default
     </div>
   {% endif %}
 
+  {% if page.first_appearance %}
+    <div class="term-metadata-block">
+      <span class="metadata-block-label">Aparece por primera vez en</span>
+      <ul class="metadata-list">
+        <li><a href="{{ page.first_appearance.url }}">{{ page.first_appearance.title }}</a></li>
+      </ul>
+    </div>
+  {% endif %}
+
   {% if page.image %}
     <figure class="term-figure">
       <img
